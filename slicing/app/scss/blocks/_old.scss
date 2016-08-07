@@ -10,3 +10,21 @@ h1, h2 {
 p {
 	
 }
+.btn {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background: linear-gradient(to bottom, #f15400, #ca4600);
+	border-bottom: 3px solid #b1b1b1;
+	border-radius: 4px;
+	color: white;
+	font-family: OpenSansBold;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 12px 32px;
+	&:hover {
+		background: linear-gradient(to bottom, #ca4600, #f15400);
+		color: #fff;
+		text-decoration: none;
+	}
+}

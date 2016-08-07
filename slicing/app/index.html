@@ -11,6 +11,9 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 	   
 		<!-- bower:css -->
+		<link rel="stylesheet" href="bower/fancybox/source/jquery.fancybox.css" />
+		<link rel="stylesheet" href="bower/animate.css/animate.css" />
+		<link rel="stylesheet" href="bower/jquery-form-styler/jquery.formstyler.css" />
 		<!-- endbower -->
 		
 		<!-- Template CSS -->
@@ -26,13 +29,79 @@
 	</head>
 	<body>
 		
-		<!-- Разметка страницы -->
+		<header class="header">
+			<div class="head_top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-1">
+							<div class="logo">
+								<a href="/">
+									<img src="img/logo.png" alt="Жилой комплекс Преображенский">
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="descr">
+								<p>Жилой комплекс<br><span>Преображенский</span></p>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="phone">
+								<a href="#">+7 (861) 945 05 15</a>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="right_button">
+								<a href="#" class="btn">Позвонить мне за 30 секунд</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .head_top -->
+			<nav class="main_menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="menu">
+								<li><a href="#">214 Ф3</a></li>
+								<li><a href="#">Ипотека</a></li>
+								<li><a href="#">Материнский капитал</a></li>
+								<li><a href="#">Планировки квартир</a>
+									<ul class="sub-menu">
+										<li><a href="#">Студия</a></li>
+										<li><a href="#">1 к. квартира 44 м<sup>2</sup></a></li>
+										<li><a href="#">1 к. квартира 64 м<sup>2</sup></a></li>
+										<li><a href="#">2 к. квартира 64 м<sup>2</sup></a></li>
+										<li><a href="#">2 к. квартира 74 м<sup>2</sup></a></li>
+									</ul>
+								</li>
+								<li><a href="#">Офис продаж</a></li>
+								<li><a href="#">Расположение ЖК</a></li>
+								<li><a href="#">Ход строительства</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav><!-- .main_menu -->
+		</header><!-- .header -->
+		<section class="section one">
+			<div class="container">
+				<div class="row">
+					
+				</div>
+			</div>
+		</section><!-- .section -->
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="bower/jquery/dist/jquery.js"></script>
 		<!-- build:js js/vendor.js -->
 
 		<!-- Добавление плагинов js средствами bower и gu -->
 		<!-- bower:js -->
+		<script src="bower/fancybox/source/jquery.fancybox.js"></script>
+		<script src="bower/jquery-form-styler/jquery.formstyler.min.js"></script>
+		<script src="bower/Headhesive.js/dist/headhesive.js"></script>
+		<script src="bower/jquery.inputmask/dist/jquery.inputmask.bundle.js"></script>
 		<!-- endbower -->
 		<!-- endbuild -->
 

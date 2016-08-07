@@ -1,0 +1,90 @@
+.head_top {
+	background: #fff;
+	height: 75px;
+	.logo {
+		height: 75px;
+		line-height: 75px;
+	}
+	.descr {
+		color: #646464;
+		font-family: PFDinTextCondPro;
+		font-size: 19px;
+		font-weight: 500;
+		line-height: 30px;
+		margin: 5px 0 0;
+		text-align: center;
+		text-transform: uppercase;
+		p {
+			margin: 0;
+		}
+		span {
+			color: #646464;
+			font-family: PFDinTextCondPro;
+			font-size: 27px;
+			font-weight: 700;
+		}
+	}
+	.phone {
+		line-height: 71px;
+		text-align: right;
+		a {
+			color: #646464;
+			font-family: OpenSansBold;
+			font-size: 24px;
+			font-weight: 700;
+			margin: 0 37px 0 0;
+			text-transform: uppercase;
+		}
+	}
+	.right_button {
+		line-height: 73px;
+		margin: 0 0 0 -46px;
+	}
+}
+.main_menu {
+	background: #ffba00;
+	height: 49px;
+	line-height: 49px;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline-block;
+			margin: 0 10px;
+			a {
+				color: #272727;
+				font-family: OpenSansRegular;
+				font-size: 17px;
+				font-weight: 600;
+				padding: 0 3px;
+				text-decoration: none;
+				&:hover {
+					border-bottom: 2px solid #fff;
+				}
+			}
+			.sub-menu {
+				background: rgba(0, 0, 0, 0.78);
+				display: none;
+				padding: 18px 52px 24px 16px;
+				position: absolute;
+				top: 49px;
+				li {
+					display: block;
+					line-height: 1;
+					a {
+						color: #fff;
+						font-family: OpenSansRegular;
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 30px;
+						&:hover {
+							border-bottom: none;
+							color: #ffba00;
+						}
+					}
+				}
+			}
+		}
+	}
+}
