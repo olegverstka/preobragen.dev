@@ -1,0 +1,57 @@
+{
+  "name": "Start Template",
+  "description": "Стартовый шаблон для адаптивной верстки",
+  "main": "index.html",
+  "authors": [
+    "olegverstka <olegverstka@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "http://webfrondev.ru/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.2",
+    "bourbon": "~4.2.6",
+    "fancybox": "~2.1.5",
+    "animate.css": "~3.5.0",
+    "jquery-form-styler": "jquery.form-styler#~1.7.4",
+    "Headhesive.js": "headhesive.js#~1.2.4",
+    "jquery.inputmask": "~3.2.7"
+  },
+  "overrides": {
+    "fancybox": {
+      "main": [
+        "./source/jquery.fancybox.js",
+        "./source/jquery.fancybox.css"
+      ],
+      "dependencies": {
+        "jquery": ">=1.6.0"
+      }
+    },
+    "jquery.inputmask": {
+      "main": [
+        "dist/jquery.inputmask.bundle.js"
+      ],
+      "dependencies": {
+        "jquery": ">=1.6.0"
+      }
+    }
+  },
+  "devDependencies": {
+    "jquery": "1.11.2",
+    "bourbon": "~4.2.6",
+    "fancybox": "~2.1.5",
+    "animate.css": "~3.5.0",
+    "jquery-form-styler": "jquery.form-styler#~1.7.4",
+    "Headhesive.js": "headhesive.js#~1.2.4",
+    "jquery.inputmask": "~3.2.7"
+  }
+}
