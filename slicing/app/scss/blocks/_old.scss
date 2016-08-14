@@ -41,3 +41,20 @@ input[type="email"] {
 	padding: 14px 26px;
 	width: 100%;
 }
+.icon-5:before { content: '\e800'; } /* '' */
+.icon-6:before { content: '\e801'; } /* '' */
+.icon-7:before { content: '\e802'; } /* '' */
+.icon-8:before { content: '\e803'; } /* '' */
+.icon-4:before { content: '\e804'; } /* '' */
+.icon-3:before { content: '\e805'; } /* '' */
+.icon-1:before { content: '\e806'; } /* '' */
+.icon-2:before { content: '\e807'; } /* '' */
+.demo-icon {
+	color: #333;
+	display: block;
+	font: 45px myfont;
+	left: 15px;
+	margin-top: -23px;
+	position: absolute;
+	top: 50%;
+}

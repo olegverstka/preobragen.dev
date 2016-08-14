@@ -3,3 +3,4 @@
 @include font-face("OpenSansBold", "../fonts/OpenSansBold", $file-formats: eot woff2 woff);
 @include font-face("OpenSansRegular", "../fonts/OpenSansRegular", $file-formats: eot woff2 woff);
 @include font-face("BebasNeueRegular", "../fonts/BebasNeueRegular", $file-formats: eot woff2 woff);
+@include font-face("myfont", "../fonts/myfont", $file-formats: eot woff2 woff);

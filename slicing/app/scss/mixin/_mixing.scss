@@ -53,3 +53,12 @@
 	left: 50%;
 	margin: $top_m + px $right_m + px $bottom_m + px $left_m + px;
 }
+// Вертикальное центрирование
+@mixin ghostVerticalAlign(){
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; width: .1px;
+  }
+}
