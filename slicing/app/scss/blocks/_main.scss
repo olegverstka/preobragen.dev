@@ -451,6 +451,14 @@
 	margin: 0 0 0 70px;
 	.col-md-1 {
 		margin: -1px 0 0 -27px;
+		&::after {
+			@include triangle(12, 7, #b3b2b0, tr);
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: -7px;
+			left: 15px;
+		}
 	}
 	h3 {
 		color: #272727;
