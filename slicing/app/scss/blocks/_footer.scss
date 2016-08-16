@@ -1,0 +1,101 @@
+.footer {
+	@include linear-gradient(to bottom, #434343, #1e1e1e);
+	padding: 30px 0 42px;
+}	
+.search {
+	position: relative;
+	input[type=text], input[type=search] {
+		background: #404040;
+		border: 0 none;
+		padding: 5px 0;
+	}
+	.btn_search {
+		background: transparent;
+		@include sprite($s-search);
+		border: 0 none;
+		margin: -13px 0 0;
+		position: absolute;
+		right: 5px;
+		text-indent: -9999px;
+		top: 50%;
+	}
+}
+.foot_menu {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			margin: 0 0 10px;
+			a {
+				color: #b5b5b5;
+				font-family: OpenSansRegular;
+				font-size: 15px;
+				font-weight: 400;
+				line-height: 15px;
+				&:hover {
+					color: #fff;
+				}
+			}
+			&:first-child {
+				margin: 0 0 19px;
+				a {
+					color: white;
+					font-family: OpenSansBold;
+					font-size: 17px;
+					font-weight: 700;
+					text-decoration: none;
+					&:hover {
+						color: #ffba00;
+					}
+				}
+			}
+		}
+	}
+	&.foot_item {
+		margin: 30px 0 0;
+		li {
+			margin: 0 0 10px;
+			&:first-child {
+				margin: 0;
+				a {
+					color: #b5b5b5;
+					font-family: OpenSansRegular;
+					font-size: 15px;
+					font-weight: 400;
+					line-height: 30px;
+					text-decoration: none;
+					&:hover {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+.foot_phone {
+	color: white;
+	font-family: OpenSansBold;
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0 0 24px 0;
+	text-align: right;
+	text-transform: uppercase;
+}
+.location {
+	margin: 48px 0 41px;
+	p {
+		color: white;
+		font-family: OpenSansRegular;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		a {
+			color: #fff;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}

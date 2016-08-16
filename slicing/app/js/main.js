@@ -1,9 +1,9 @@
-$(document).ready(function(){
+jQuery(document).ready(function(){
 	var delay=350, setTimeoutConst;
 
-	$('.menu>li').hover(
+	jQuery('.menu>li').hover(
 		function () {
-			var ths = $(this);
+			var ths = jQuery(this);
 			setTimeoutConst = setTimeout(function(){
 				ths.addClass('view');
 				ths.closest('.menu').find('.sub-menu').slideUp(0);
@@ -11,7 +11,7 @@ $(document).ready(function(){
 			}, delay);
 		},
 		function () {
-			var ths = $(this);
+			var ths = jQuery(this);
 			ths.removeClass('view');
 			setTimeout(function() {
 				if (!ths.hasClass('view')) {
@@ -21,4 +21,13 @@ $(document).ready(function(){
 			clearTimeout(setTimeoutConst );
 		}
 	);
+
+	jQuery('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+		jQuery(this)
+		.addClass('active').siblings().removeClass('active')
+		.closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+	});
+
+	jQuery("select").styler();
+
 });
