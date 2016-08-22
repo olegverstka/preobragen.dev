@@ -29,6 +29,9 @@ class MWShortcodes {
 		"pricing_table",
 		"parallax_block",
 		"technology",
+		"infrastructure",
+		"improvement",
+		"document"
 	 );
 
 	function __construct() {
@@ -526,6 +529,69 @@ class MWShortcodes {
 		$result .= '<div class="col-md-1"><img src="'. $img_tech .'" alt=""></div>';
 		$result .= '<div class="col-md-11"><h3>'. $title_tech .'</h3><p>'. $text_tech .'</p></div>';
 		$result .= '</div><!-- .item_snip -->';
+		$result .= '</div>';
+
+		return $result;
+	}
+	/* ***************************************************************
+	* **************** Infrastructure Shortcode ******************************
+	* **************************************************************** */
+	function shortcode_infrastructure( $atts, $content = null ) {
+		extract( shortcode_atts( array(
+				'title_infstr'		=> '',
+				'text_infstr'       => '',
+				'img_infstr'     	=> ''
+		), $atts ) );
+
+		$result = "";
+		$result .= '<div class="col-md-3">';
+		$result .= '<div class="item_too">';
+		$result .= '<div class="img_too"><img src="'. $img_infstr .'" alt=""></div>';
+		$result .= '<h3>'. $title_infstr .'</h3><p>'. $text_infstr .'</p>';
+		$result .= '</div>';
+		$result .= '</div>';
+
+		return $result;
+	}
+
+	/* ***************************************************************
+	* **************** Improvement Shortcode ******************************
+	* **************************************************************** */
+	function shortcode_improvement( $atts, $content = null ) {
+		extract( shortcode_atts( array(
+				'title'		=> '',
+				'class'         => '',
+		), $atts ) );
+
+		$result = '';
+		$result .= '<div class="improvement '.$class.'">';
+		$result .= '<div class="item_left">';
+		$result .= '<i></i>';
+		$result .= '</div>';
+		$result .= '<div class="item_right">';
+		$result .= '<p>'.$title.'</p>';
+		$result .= '</div>';
+		$result .= '</div>';
+
+		return $result;
+	}
+	/* ***************************************************************
+	* **************** Document Shortcode ******************************
+	* **************************************************************** */
+	function shortcode_document( $atts, $content = null ) {
+		extract( shortcode_atts( array(
+				'title'		=> '',
+				'class'     => '',
+				'link'      => ''
+		), $atts ) );
+
+		$result = '';
+		$result .= '<div class="col-md-3">';
+		$result .= '<div class="doc_item">';
+		$result .= '<div class="doc_item_wrap">';
+		$result .= '<a target="_blank" href="'. $link .'"><i class="demo-icon '. $class .'"></i>'. $title .'</a>';
+		$result .= '</div>';
+		$result .= '</div>';
 		$result .= '</div>';
 
 		return $result;

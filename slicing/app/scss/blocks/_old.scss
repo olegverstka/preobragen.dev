@@ -10,6 +10,7 @@ html, body {
 .main {
 	overflow:auto;
 	padding-bottom: 360px;
+	width: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
 	
@@ -92,8 +93,17 @@ input[type="email"] {
 	width: 100%;
 }
 .vc_row[data-vc-full-width] {
-    overflow: initial;
+    overflow: initial !important;
     // transition: opacity 0.5s ease 0s;
+}
+.no-paddings {
+	padding: 0 !important;
+	.col-sm-12 {
+    	padding: 0 !important;
+    }
+}
+.ajax-loader {
+	position: absolute;
 }
 .icon-5:before { content: '\e800'; } /* '' */
 .icon-6:before { content: '\e801'; } /* '' */
@@ -166,4 +176,21 @@ input[type="email"] {
 			}
 		}
 	}
+}
+.wpcf7-not-valid-tip {
+	position: absolute;
+	top: 40px;
+}
+.wpcf7-validation-errors {
+	left: -7px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+.wpcf7-mail-sent-ok {
+	bottom: 0;
+    left: -7px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }

@@ -60,7 +60,7 @@ vc_add_param("vc_row", array(
 	"def" => ""
 ));
 
-/* reviews Shortcode */
+/* technology Shortcode */
 vc_map( array(
 	"name" => "Технология",
 	"base" => "technology",
@@ -90,6 +90,83 @@ vc_map( array(
 	)
 ) );
 
+/* infrastructure Shortcode */
+vc_map( array(
+	"name" => "Инфраструктура",
+	"base" => "infrastructure",
+	"icon" => "infrastructure",
+	"class" => "",
+	"params" => array(
+		array(
+			'type' => 'textfield',
+			'heading' => "Заголовок инфраструктуры",
+			'param_name' => 'title_infstr',
+			'admin_label' => true
+		),
+		array(
+			'type' => 'textfield',
+			'heading' => "Текст инфраструктуры",
+			'param_name' => 'text_infstr',
+			'admin_label' => true
+		),
+		array(
+			'type' => 'textfield',
+			'heading' => "Изображение инфраструктуры",
+			'param_name' => 'img_infstr',
+			'admin_label' => true
+		),
+	)
+) );
+
+/* improvement Shortcode */
+vc_map( array(
+	"name" => "Обустройство",
+	"base" => "improvement",
+	"icon" => "improvement",
+	"class" => "",
+	"params" => array(
+		array(
+			'type' => 'textfield',
+			'heading' => "Текст обустройства",
+			'param_name' => 'title',
+			'admin_label' => true
+		),
+		array(
+			'type' => 'textfield',
+			'heading' => "Класс обустройства",
+			'param_name' => 'class',
+			'admin_label' => true
+		),
+	)
+) );
+
+/* document Shortcode */
+vc_map( array(
+	"name" => "Документ",
+	"base" => "document",
+	"icon" => "document",
+	"class" => "",
+	"params" => array(
+		array(
+			'type' => 'textfield',
+			'heading' => "Название документа",
+			'param_name' => 'title',
+			'admin_label' => true
+		),
+		array(
+			'type' => 'textfield',
+			'heading' => "Класс иконки",
+			'param_name' => 'class',
+			'admin_label' => true
+		),
+		array(
+			'type' => 'textfield',
+			'heading' => "Ссылка на документ",
+			'param_name' => 'link',
+			'admin_label' => true
+		),
+	)
+) );
 
 // Replace rows and columns classes
 function ct_vc_shortcode_css_class( $class_string, $tag, $atts ) {
