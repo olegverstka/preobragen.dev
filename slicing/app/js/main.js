@@ -1,14 +1,35 @@
 jQuery(document).ready(function(){
 
+	$('.toggle_mnu').click(function() {
+		$('.sandwich').toggleClass('active');
+	});
+
+	$('.toggle_mnu').on('click', function() {
+		if ($('.navbar-nav').is(':visible')) {
+			$('.navbar-nav').fadeOut(600);
+			$('.navbar-nav li a').removeClass('fadeInUp animated');
+		} else {
+			$('.navbar-nav').fadeIn(600);
+			$('.navbar-nav li a').addClass('fadeInUp animated');
+		};
+	});
+
+	$('.navbar-nav li a').click(function(){
+		if($('.toggle_mnu').is(':visible')){
+			$('.navbar-nav').css('display', 'none');
+			$('.sandwich').removeClass('active');
+		}
+	});
+
 	// Выпадающее меню
 	var delay=350, setTimeoutConst;
 
-	jQuery('.menu>li').hover(
+	jQuery('.navbar-nav>li').hover(
 		function () {
 			var ths = jQuery(this);
 			setTimeoutConst = setTimeout(function(){
 				ths.addClass('view');
-				ths.closest('.menu').find('.sub-menu').slideUp(0);
+				ths.closest('.navbar-nav').find('.sub-menu').slideUp(0);
 				ths.find('.sub-menu').css('z-index', 5000).slideDown(0);
 			}, delay);
 		},
